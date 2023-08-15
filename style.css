@@ -9,6 +9,8 @@ body{
     background: #222;
 }
 
+
+
 .card{
     width: 90%;
     max-width: 470px;
@@ -106,3 +108,46 @@ body{
     margin-top: 10px;
     display: none;
 }
+/* Media query for screens up to 768px (mobile) */
+@media (max-width: 768px) {
+    .card {
+      max-width: none; /* Remove max-width for mobile */
+      margin: 20px auto;
+      border-radius: 20px; /* Adjust border radius for mobile */
+      padding: 15px; /* Adjust padding for mobile */
+    }
+  
+    .search input{
+        width: 80%;
+    }
+    .search button {
+      width: 20%; 
+    }
+  
+    .weather-icon {
+      width: 100px;
+      margin-top: 15px; 
+    }
+  
+    .weather h1 {
+      font-size: 32px; 
+    }
+  
+    .weather h2 {
+      font-size: 20px; 
+      margin-top: 5px;
+    }
+  
+    .details {
+      margin-top: 15px; 
+    }
+  
+    .humidity,
+    .wind {
+      font-size: 16px;
+    }
+  
+    .error {
+      font-size: 10px; 
+    }
+  }
